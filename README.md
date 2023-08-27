@@ -43,13 +43,44 @@ Hey so here I have did 5 different problems that I developed it in Intel OneAPI.
       Then you will be good to go
 
 
-ii)malaria deetction using cnn with cell images
+# ii)malaria deetction using cnn with cell images
 
-iii)Anomaly detection using alibi detect in clothe materials
 
-iv)cats vs dog using cnn with images
+# iii)Anomaly detection using alibi detect in clothe materials
+      This repository demonstrates anomaly detection in clothing material images using the Alibi Detect library. Anomaly detection is essential for identifying unusual patterns or outliers in data, making it valuable for quality control in manufacturing and ensuring product consistency.
+      
+      ->Workflow Overview:
+      Dataset Preparation:
+      
+      The dataset comprises images of clothing materials. Good (normal) images are used for training and validation, while any image differing significantly from the norm is considered an outlier.
+      
+      ->Data Preprocessing:
+      
+      Images are loaded, resized, and normalized to prepare them for model training. Both good and bad (outlier) images are processed for training and evaluation.
+      
+      ->CNN Architecture Definition:
+      
+      A Convolutional Neural Network (CNN) architecture is designed to encode and decode images. The encoder network learns to represent images in a lower-dimensional space, and the decoder network reconstructs the original images from these encoded representations.
+      
+      ->Outlier Detector Creation:
+      
+      An OutlierVAE detector from Alibi Detect is utilized. This detector employs a Variational Autoencoder (VAE) architecture for anomaly detection. It is trained on the good images and aims to reconstruct them accurately.
+      
+      ->Training the Detector:
+      
+      The detector is trained on the good images dataset. The training process involves optimizing the VAE's parameters to minimize the reconstruction error.
+      
+      ->Setting the Threshold:
+      
+      The threshold for outlier detection is defined either manually or using the infer_threshold function, which sets the threshold based on the percentage of instances considered outliers.
+      
+      ->Anomaly Detection and Visualization:
+      
+      The trained detector is used to predict anomalies in both the test set and specific outlier images. Visualization functions are used to display instance scores and feature scores, aiding in anomaly identification.
 
-v)Predicting whether a customer will stay or not in bank based on csv data using ANN
+# iv)cats vs dog using cnn with images
+
+# v)Predicting whether a customer will stay or not in bank based on csv data using ANN
 
 # How OneAPI helped me
 Using a windows laptop with a mx graphic card training the malaria dataset with 30K images would have been a tiring process but with intel oneAPI it saved really a lot of time and its almost equal to the time run in mac whcih makes worrying about my laptop hardware incompatibility reduntant.
