@@ -44,6 +44,10 @@ Hey so here I have did 5 different problems that I developed it in Intel OneAPI.
 
 
 # ii)malaria deetction using cnn with cell images
+            -This took the general approach of preprocessing data , segregating into training and test and creating classes of training and test data 
+            -And then building cnn layers and adding more layers and compiling and flattening which is the genral approach.
+            -ANd then passed a random image of cell to predict whetehr it has malaria or not 
+            -The model has been trained on 20k -30k images with keeping 25epochs which took 25 mins which is really fast compared to a windows desktop by using oneAPI.
 
 
 # iii)Anomaly detection using alibi detect in clothe materials
@@ -79,8 +83,44 @@ Hey so here I have did 5 different problems that I developed it in Intel OneAPI.
       The trained detector is used to predict anomalies in both the test set and specific outlier images. Visualization functions are used to display instance scores and feature scores, aiding in anomaly identification.
 
 # iv)cats vs dog using cnn with images
+            -Again this follows the same approach of malaria detection of data preprocessing, cnn layers,flattening, compiling and more.
+            -It is trained over 5k images.
+            -OneAPI trained it in 10 min for 25epochs which is pretty fast and nearly equal to a mac processor 
 
 # v)Predicting whether a customer will stay or not in bank based on csv data using ANN
+            Customer churn, or the rate at which customers switch or leave a service, is a critical concern for businesses. Predicting and managing customer churn can help companies retain their valuable customers and maintain growth. In this project, we address the problem of customer churn prediction using an Artificial Neural Network (ANN). By leveraging historical customer data, we aim to build a model that can predict whether a customer is likely to churn or not.
+
+
+
+            Importing Libraries and Reading Data:
+            
+            Required libraries like pandas and NumPy are imported, and the dataset ('Churn_Modelling.csv') is read into a DataFrame.
+            Data Preprocessing:
+            
+            Feature matrix 'X' and target vector 'y' are extracted from the dataset.
+            The 'LabelEncoder' is used to encode the 'Gender' column.
+            One-Hot Encoding:
+            
+            'Geography' column is one-hot encoded using 'ColumnTransformer'.
+            Feature Scaling:
+            
+            All features in 'X' are scaled using the 'StandardScaler'.
+            Building the ANN:
+            
+            A sequential ANN model is created with three layers:
+            Two hidden layers with 6 units each and 'relu' activation.
+            Output layer with 1 unit and 'sigmoid' activation for binary classification.
+            Compiling the ANN:
+            
+            The ANN is compiled with 'adam' optimizer and 'binary_crossentropy' loss function.
+            Training the ANN:
+            
+            The model is trained on 'X_train' and 'y_train' data with 32 batch size for 100 epochs.
+            Prediction:
+            
+            Model predictions are obtained for a sample input using ann.predict().
+            The probability of churn and a binary churn prediction are printed.
+            This code snippet showcases the process of building an ANN for customer churn prediction. By preprocessing data, constructing an appropriate neural network architecture, training the model, and making predictions, we can gain insights into which customers are likely to churn. This project contributes to businesses' efforts to retain customers and enhance their decision-making process.
 
 # How OneAPI helped me
 Using a windows laptop with a mx graphic card training the malaria dataset with 30K images would have been a tiring process but with intel oneAPI it saved really a lot of time and its almost equal to the time run in mac whcih makes worrying about my laptop hardware incompatibility reduntant.
