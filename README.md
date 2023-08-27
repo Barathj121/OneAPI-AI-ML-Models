@@ -84,3 +84,20 @@ Hey so here I have did 5 different problems that I developed it in Intel OneAPI.
 
 # How OneAPI helped me
 Using a windows laptop with a mx graphic card training the malaria dataset with 30K images would have been a tiring process but with intel oneAPI it saved really a lot of time and its almost equal to the time run in mac whcih makes worrying about my laptop hardware incompatibility reduntant.
+Despite working on a Windows laptop with an MX graphics card and 8GB of RAM, Intel OneAPI provided me with substantial benefits and optimizations that greatly enhanced my project development and execution. Here's how Intel OneAPI supported me:
+
+- **Optimized Libraries and Frameworks:** Intel OneAPI's optimized libraries and frameworks effectively utilized my MX graphics card and CPU, accelerating computations. For instance, in my CNN projects like malaria detection and cats vs. dogs classification, the deep learning frameworks leveraged the MX graphics card, improving training and inference speeds.
+
+- **Parallelism and Multithreading:** Intel OneAPI's tools facilitated parallelism and multithreading, making the most of my CPU's cores for concurrent tasks. This was crucial for projects with large datasets, enhancing data processing speed.
+
+- **Performance Optimization:** With Intel OneAPI, I had access to tools for analyzing and optimizing code performance. These tools identified bottlenecks and improved memory usage, optimizing hardware resources and overall performance.
+
+- **Memory Management:** Given my 8GB RAM, efficient memory management was key. Intel OneAPI's tools helped optimize memory usage, enhancing stability.
+
+- **Hardware-Aware Development:** OneAPI's emphasis on hardware-aware development allowed me to tailor applications to my hardware, even with its limitations.
+
+- **Ease of Development:** Intel OneAPI's consistent development environment streamlined transitions between projects, eliminating the need to learn new tools each time.
+
+- **Access to Tutorials and Documentation:** Intel OneAPI's rich resources, including tutorials and documentation, aided troubleshooting, skill enhancement, and resource utilization.
+
+In summary, Intel OneAPI's optimizations accelerated project development, making the most of my laptop's hardware. Despite hardware constraints, I experienced noticeable improvements in project performance and development efficiency.
