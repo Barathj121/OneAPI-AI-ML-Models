@@ -43,7 +43,7 @@ Hey so here I have did 5 different problems that I developed it in Intel OneAPI.
       Then you will be good to go
 
 
-# ii)malaria deetction using cnn with cell images
+# ii)malaria detection using cnn with cell images
             -This took the general approach of preprocessing data , segregating into training and test and creating classes of training and test data 
             -And then building cnn layers and adding more layers and compiling and flattening which is the genral approach.
             -ANd then passed a random image of cell to predict whetehr it has malaria or not 
